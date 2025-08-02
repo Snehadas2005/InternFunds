@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDM0136Z0CpQd0984sCPSISjCeHJgt4-yo",
-  authDomain: "internfund.firebaseapp.com",
-  projectId: "internfund",
-  storageBucket: "internfund.firebasestorage.app",
-  messagingSenderId: "649902893025",
-  appId: "1:649902893025:web:35273cae44258bc1c054a0",
-  measurementId: "G-CM8714HR50",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
